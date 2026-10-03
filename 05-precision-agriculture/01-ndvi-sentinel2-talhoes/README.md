@@ -70,7 +70,19 @@ Período 01/10/2025 a 30/09/2026, cinco talhões, 51 cenas Sentinel-2 L2A (tile 
 | Eucalipto | 18 | 0,79 / 0,84 / 0,88 |
 | Pasto | 22 | 0,64 / 0,74 / 0,84 |
 
-Eucalipto e coco apresentam os maiores NDVI, e o café os menores e mais variáveis, coerente com a mistura de solo e copa no pixel de 10 m. Interpretação sazonal: [INFORMAÇÃO A PREENCHER]
+Eucalipto e coco apresentam os maiores NDVI, e o café os menores e mais variáveis, coerente com a mistura de solo e copa no pixel de 10 m.
+
+![Série temporal de NDVI por talhão](outputs/maps/serie_temporal_ndvi.png)
+
+**Leitura da série (descritiva, sem diagnóstico agronômico):**
+
+- **Eucalipto (T04)** é o mais alto e estável, entre 0,82 e 0,88, com queda gradual para cerca de 0,79 em agosto.
+- **Pasto (T05)** tem a maior amplitude sazonal: sobe até cerca de 0,84 em fevereiro e cai para cerca de 0,64 no início de maio, voltando a 0,74 em junho e terminando perto de 0,66 em setembro.
+- **Coco (T02)** fica entre 0,75 e 0,82 na maior parte do período, com quedas pontuais no fim de dezembro e em maio, e termina perto de 0,72.
+- **Café (T01 e T03)** tem os menores valores. T01 passa de cerca de 0,72–0,75 (janeiro a abril) para cerca de 0,56 em setembro; T03 chega a cerca de 0,50 no mesmo mês. Os dois talhões de café seguem trajetórias parecidas, com T03 mais baixo.
+- Nos quatro tipos de cobertura o NDVI é mais alto entre dezembro e abril e menor de junho a setembro. Isso é compatível com o ciclo de chuvas e estiagem da região, mas a relação não foi testada neste projeto (não há dados de precipitação aqui).
+- Quedas bruscas isoladas (pasto em maio, coco em dezembro) podem vir de manejo, de resíduo de nuvem fina não removida pela máscara SCL ou de outro fator. Os dados não permitem separar as causas.
+- Há poucas observações aprovadas entre março e maio, o que limita a leitura desse intervalo.
 
 ## 12. Valor
 
