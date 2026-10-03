@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Dados brutos pesados (não versionar; documentar a origem no README de cada projeto)
+**/data/raw/
+**/data/cache/
+*.zip
+*.SAFE/
+*.jp2
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# DADOS REAIS / PRIVADOS: nunca versionar (limites de fazendas, imagens de clientes, dados de produção)
+**/data/private/
+private/
+*.gpkg
+!**/data/public/*.gpkg
