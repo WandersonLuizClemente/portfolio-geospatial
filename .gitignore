@@ -4,9 +4,10 @@ __pycache__/
 .venv/
 venv/
 .env
+.pytest_cache/
 .ipynb_checkpoints/
 
-# Dados brutos pesados (não versionar; documentar a origem no README de cada projeto)
+# Imagens baixadas (o script baixa de novo)
 **/data/raw/
 **/data/cache/
 *.zip
@@ -17,8 +18,12 @@ venv/
 .DS_Store
 Thumbs.db
 
-# DADOS REAIS / PRIVADOS: nunca versionar (limites de fazendas, imagens de clientes, dados de produção)
+# DADOS REAIS / PRIVADOS: nunca versionar (limites de fazendas, imagens de clientes, dados de producao)
 **/data/private/
 private/
 *.gpkg
 !**/data/public/*.gpkg
+
+# Resultados calculados sobre areas reais: so publicar depois de confirmar a autorizacao
+05-precision-agriculture/01-ndvi-sentinel2-talhoes/outputs/tables/*.csv
+05-precision-agriculture/01-ndvi-sentinel2-talhoes/outputs/maps/*.png

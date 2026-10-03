@@ -2,19 +2,19 @@
 
 **Transformar dados geoespaciais em inteligência para tomada de decisão.**
 
-Repositório de projetos de **SIG/GIS, Python, dados geoespaciais, banco de dados espacial (PostGIS), WebGIS e agricultura de precisão**, com foco em problemas reais de agro e meio ambiente.
+Projetos de **SIG/GIS, Python, dados geoespaciais, banco de dados espacial (PostGIS), WebGIS e agricultura de precisão**, com foco em problemas reais de agro e meio ambiente.
 
-> **PROJETO DEMONSTRATIVO:** os projetos deste repositório são demonstrativos e usam
-> **dados públicos** (por exemplo, imagens Sentinel-2). No Projeto 1, os limites de talhões
-> são de **áreas reais com uso autorizado**, anonimizadas. Nenhum projeto contém imagens de
-> clientes, dados de produção ou dados pessoais.
+> **PROJETO DEMONSTRATIVO:** os projetos deste repositório são demonstrativos e usam **dados públicos**
+> (por exemplo, imagens Sentinel-2). Os limites de talhões do Projeto 1 vêm de áreas reais com uso
+> autorizado e **não são publicados aqui**. Nenhum projeto contém imagens de clientes, dados de
+> produção ou dados pessoais.
 
 ## Autor
 
 **Wanderson Luiz** · Analista de Dados Geoespaciais · Drone, GIS e Python · Agro e Ambiental  
 LinkedIn: [linkedin.com/in/wluizclemente](https://www.linkedin.com/in/wluizclemente)
 
-A experiência profissional está descrita no LinkedIn. Este repositório reúne apenas projetos construídos para demonstrar competências de forma pública e reproduzível.
+A experiência profissional está descrita no LinkedIn. Este repositório reúne projetos construídos para demonstrar competências de forma pública e reproduzível.
 
 ## Projetos
 
@@ -30,39 +30,15 @@ A experiência profissional está descrita no LinkedIn. Este repositório reúne
 
 ## Padrão de cada projeto
 
-Cada projeto segue a mesma estrutura de documentação:
+**Problema → Objetivo → Dados → Tratamento → Banco de dados → Análise → Automação → Machine Learning (quando justificado) → Visualização → WebGIS → Resultado → Valor**, com README próprio, código organizado, resultado visual e instruções para reproduzir.
 
-**Problema → Objetivo → Dados → Tratamento → Banco de dados → Análise → Automação → Machine Learning (quando justificado) → Visualização → WebGIS → Resultado → Valor**
+## Como preparar o ambiente (Windows, CMD)
 
-e inclui README próprio, código organizado, resultado visual (mapa, gráfico ou dashboard) e instruções para reproduzir.
-
-## Estrutura do repositório
-
-```text
-portfolio-geospatial/
-├── 01-gis/
-├── 02-python/
-├── 03-geospatial-data-science/
-├── 04-machine-learning/
-├── 05-precision-agriculture/
-├── 06-postgis/
-├── 07-webgis/
-├── datasets/
-├── notebooks/
-├── scripts/
-├── maps/
-├── dashboards/
-└── README.md
-```
-
-## Como preparar o ambiente
-
-```bash
+```cmd
 python -m venv .venv
-# Windows:  .venv\Scripts\activate
-# Linux/macOS:  source .venv/bin/activate
+.venv\Scripts\activate.bat
 pip install -r requirements.txt
-python scripts/check_env.py
+python scripts\check_env.py
 ```
 
 ## Licença

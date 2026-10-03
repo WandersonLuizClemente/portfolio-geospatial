@@ -1,11 +1,10 @@
-# Dependências do Projeto 1 (NDVI com Sentinel-2)
 numpy
 pandas
 geopandas
 shapely
 pyproj
+pyogrio
 rasterio
 matplotlib
 pystac-client
-jupyter
 pytest

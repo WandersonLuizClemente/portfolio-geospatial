@@ -1,20 +1,11 @@
-"""Verifica se as bibliotecas do portfólio estão instaladas e mostra as versões.
+"""Verifica se as bibliotecas do portfolio estao instaladas e mostra as versoes.
 
-Uso:
-    python scripts/check_env.py
+Uso (da raiz do repositorio):  python scripts\check_env.py
 """
 import importlib
 
-PACOTES = [
-    "numpy",
-    "pandas",
-    "geopandas",
-    "shapely",
-    "pyproj",
-    "rasterio",
-    "matplotlib",
-    "pystac_client",
-]
+PACOTES = ["numpy", "pandas", "geopandas", "shapely", "pyproj", "pyogrio",
+           "rasterio", "matplotlib", "pystac_client", "pytest"]
 
 
 def main() -> None:
@@ -22,12 +13,10 @@ def main() -> None:
     for nome in PACOTES:
         try:
             modulo = importlib.import_module(nome)
-            versao = getattr(modulo, "__version__", "versão não informada")
-            print(f"[OK]    {nome:<14} {versao}")
+            print(f"[OK]    {nome:<14} {getattr(modulo, '__version__', '-')}")
         except ImportError:
             print(f"[FALTA] {nome}")
             faltando.append(nome)
-
     if faltando:
         print("\nInstale o que falta com:  pip install -r requirements.txt")
     else:
