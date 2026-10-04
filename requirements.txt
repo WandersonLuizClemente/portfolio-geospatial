@@ -9,3 +9,6 @@ matplotlib
 pystac-client
 pytest
 psycopg[binary]
+fastapi
+uvicorn
+httpx
