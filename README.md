@@ -21,7 +21,7 @@ A experiência profissional está descrita no LinkedIn. Este repositório reúne
 | # | Projeto | Área | Status |
 |---|---------|------|--------|
 | 1 | [Monitoramento de NDVI por talhão com Sentinel-2](05-precision-agriculture/01-ndvi-sentinel2-talhoes/) | Agricultura de precisão, GIS, Python | Em desenvolvimento |
-| 2 | Banco geoespacial: ETL para PostGIS e consultas espaciais | PostGIS, automação | Planejado |
+| 2 | [Banco geoespacial: NDVI por talhão em PostgreSQL + PostGIS](06-postgis/01-ndvi-postgis/) | PostGIS, SQL, automação | Em desenvolvimento |
 | 3 | WebGIS: mapa interativo e API por talhão | WebGIS, API | Planejado |
 | 4 | Falhas de plantio em ortomosaico público | Drone, visão computacional | Planejado |
 | 5 | Machine Learning com avaliação por métricas | ML geoespacial | Planejado |

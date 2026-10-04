@@ -8,3 +8,4 @@ rasterio
 matplotlib
 pystac-client
 pytest
+psycopg[binary]

@@ -28,3 +28,6 @@ private/
 05-precision-agriculture/01-ndvi-sentinel2-talhoes/outputs/tables/*.csv
 05-precision-agriculture/01-ndvi-sentinel2-talhoes/outputs/maps/*.png
 !05-precision-agriculture/01-ndvi-sentinel2-talhoes/outputs/maps/serie_temporal_ndvi.png
+
+# Resultados do Projeto 2 (gerados a partir de areas reais)
+06-postgis/01-ndvi-postgis/outputs/*.csv
