@@ -60,7 +60,14 @@ Cuidados de segurança: as consultas usam parâmetros do driver (sem montar SQL 
 
 ## 10. Resultado
 
-[INFORMAÇÃO A PREENCHER: captura de tela do mapa e link do GitHub Pages]
+**Mapa publicado:** <https://wandersonluizclemente.github.io/portfolio-geospatial/07-webgis/01-mapa-talhoes/docs/>
+
+![Mapa de NDVI por talhão](docs/captura_mapa.png)
+
+- Os 5 talhões são coloridos pelo NDVI médio da data escolhida (33 datas com ao menos um talhão aprovado); datas sem observação aprovada aparecem em cinza.
+- Ao clicar em um talhão, o painel mostra cultura, área, NDVI na data, média do período e a série temporal.
+- A mesma página funciona com arquivos estáticos (como no endereço acima) ou ligada à API, com `?api=http://127.0.0.1:8000`.
+- API testada contra PostgreSQL com PostGIS; mapa testado em tela de computador e de celular, em modo claro e escuro.
 
 ## 11. Valor
 
